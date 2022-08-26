@@ -1,0 +1,220 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+  
+
+
+}
+
+
+.login {
+  
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  32px 32px 64px #bebebe,
+                 -32px -32px 64px #ffffff;
+}
+
+#ragister {
+    border-radius: 50px;
+    width: 400px;
+    height: 450px;
+    position: relative;
+    background: #e0e0e0;
+    box-shadow:  32px 32px 64px #bebebe,
+                 -32px -32px 64px #ffffff;
+}
+
+
+
+a {
+
+    position: relative;
+    top: 10px;
+    left: 85px;
+    font-size: 35px;
+    margin: 10px;
+    color: black;
+
+}
+
+#border-bottam {
+    border-bottom: 2px solid black;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    right: 1px
+}
+
+
+
+
+
+.group {
+    position: relative;
+    top: 55px;
+    padding: 15px;
+}
+
+.input {
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+}
+
+.input:focus {
+    outline: none;
+}
+
+label {
+    color: #999;
+    font-size: 20px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 20px;
+    top: 5px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.input:focus~label,
+.input:valid~label {
+    top: -5px;
+    font-size: 14px;
+    color: #000;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 90%;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #000;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.input:focus~.bar:before,
+.input:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #000;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+
+a h4 {
+    position: relative;
+    top: 27px;
+    left: 32px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#btn {
+  position: relative;
+  top: 55px;
+  left: 125px;
+    padding: 10px 25px;
+    border: unset;
+    border-radius: 25px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 20px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+  }
+  
+  #btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+  }
+  
+  #btn:hover {
+    color: #e8e8e8;
+  }
+  
+  #btn:hover::before {
+    width: 100%;
+  }
+  
+  
+  
